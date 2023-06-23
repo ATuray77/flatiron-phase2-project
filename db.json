@@ -2,38 +2,38 @@
   "songs":[
     {
       "id": 1,
-      "Title": " ",
-      "Artist": " ",
-      "Style": " ",
-      "Lyrics": ""
+      "Title": "Father I Adore You",
+      "Artist": "Nathaniel Bassey",
+      "Style": "Worship ",
+      "Lyrics": "Father I Adore you, I lay my life before You. I will will, love You"
     },
     {
       "id": 2,
-      "Title": " ",
-      "Artist": " ",
-      "Style": " ",
-      "Lyrics": ""
+      "Title": "Forever You Will Be",
+      "Artist": "Chris Oyakhilome",
+      "Style": "Worship ",
+      "Lyrics": "Forever You will be, the Lamb upon the throne, I gladly bow my knees, as I worship you Lord"
     },
     {
       "id": 3,
-      "Title": " ",
-      "Artist": " ",
-      "Style": " ",
-      "Lyrics": ""
+      "Title": "Fragrance To Worship ",
+      "Artist": "Sunsin Oyekan ",
+      "Style": "Worship ",
+      "Lyrics": "First it was fragrance, then it turned to, my worship is my weapon, this is how I win my battle"
     },
     {
       "id": 4,
-      "Title": " ",
-      "Artist": " ",
-      "Style": " ",
-      "Lyrics": ""
+      "Title": "I Have A God",
+      "Artist": "Matthew Peter",
+      "Style": "Praise",
+      "Lyrics": "I have a God who never fails, I have a God who never fails, who never fails, forever more"
     },
     {
       "id": 5,
-      "Title": " ",
-      "Artist": " ",
-      "Style": " ",
-      "Lyrics": ""
+      "Title": "Halleluia ",
+      "Artist": "Yaw Boadu Jnr.",
+      "Style": "Praise",
+      "Lyrics": "Halle Hale, Oh Halla, Halle Halle, Halleluia"
     }
     ]
  }

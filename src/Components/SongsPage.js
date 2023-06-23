@@ -3,10 +3,10 @@ import { Route } from 'react-router-dom'
 import SongsList from './SongsList'
 import SongsShow from './SongsShow'
 
-function SongsPage() {
+function SongsPage({ songs }) {
   return (
     <div>
-      <SongsList />
+      <SongsList songs={songs}/>
     </div>
   )
 }

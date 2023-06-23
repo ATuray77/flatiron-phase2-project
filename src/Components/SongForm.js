@@ -1,8 +1,9 @@
-import React from 'react'
+
+import "./Form.css";
 
 function SongForm() {
   return (
-    <form>
+    <form className="form">
       <label>
         Title
         <input type='text' name='title'/>

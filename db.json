@@ -1,0 +1,39 @@
+{ 
+  "songs":[
+    {
+      "id": 1,
+      "Title": " ",
+      "Artist": " ",
+      "Style": " ",
+      "Lyrics": ""
+    },
+    {
+      "id": 2,
+      "Title": " ",
+      "Artist": " ",
+      "Style": " ",
+      "Lyrics": ""
+    },
+    {
+      "id": 3,
+      "Title": " ",
+      "Artist": " ",
+      "Style": " ",
+      "Lyrics": ""
+    },
+    {
+      "id": 4,
+      "Title": " ",
+      "Artist": " ",
+      "Style": " ",
+      "Lyrics": ""
+    },
+    {
+      "id": 5,
+      "Title": " ",
+      "Artist": " ",
+      "Style": " ",
+      "Lyrics": ""
+    }
+    ]
+ }

@@ -1,8 +1,13 @@
 import React from 'react'
+import { Route } from 'react-router-dom'
+import SongsList from './SongsList'
+import SongsShow from './SongsShow'
 
 function SongsPage() {
   return (
-    <div>SongsPage</div>
+    <div>
+      <SongsList />
+    </div>
   )
 }
 

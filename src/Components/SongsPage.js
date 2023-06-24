@@ -5,7 +5,6 @@ import SongsShow from './SongsShow'
 
 
 function SongsPage({ songs }) {
-  console.log(songs)
   const match = useRouteMatch()
   console.log(match)
 

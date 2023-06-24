@@ -6,6 +6,17 @@ const onSubmit = (e) => {
   e.preventDefault();
   const formData = Object.fromEntries(new FormData(e.target));
   console.log(formData)
+
+  fetch("http://localhost:4000/songs", 
+    {
+      method: "POST",
+      headers: {
+        "accept": "application/json",
+        "Conetent-Type": "application/json"},
+      body: JSON.stringify(formData)
+    }
+  ).then((r) => r.json())
+   .then((resFormObj) => onFormSubmitted(resFormObj))
 }
 
 

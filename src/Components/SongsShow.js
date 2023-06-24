@@ -11,8 +11,8 @@ function SongsShow({ songs }) {
   return (
     <div>
       <h3>Title: {songs[params.songID].Title}</h3>
-      <p>Artist: {songs[params.songID].Artist}</p>
-      <p>Style: {songs[params.songID].Style}</p>
+      <h4>Artist: {songs[params.songID].Artist}</h4>
+      <h5>Style: {songs[params.songID].Style}</h5>
       <p>{songs[params.songID].Lyrics}</p>
     </div>
   );

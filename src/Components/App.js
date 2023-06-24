@@ -13,9 +13,11 @@ function App() {
   useEffect(() => {
     fetch("http://localhost:4000/songs")
       .then((r) => r.json())
-      .then((songs) => setSongs(songs))
-      
+      .then((songs) => setSongs(songs))  
   }, [])  
+
+ if (!songs) return <h2>Loading...</h2>; 
+
 console.log(songs)
   return (
     <div>

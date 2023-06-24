@@ -4,7 +4,7 @@ import { useParams } from 'react-router-dom'
 function SongsShow({ songs }) {
   console.log(songs)
 
-  const params = useParams();
+  const params = useParams(); //this function pulls out the id params
   console.log(params)
   
 

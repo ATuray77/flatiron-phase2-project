@@ -3,7 +3,9 @@ import "./Form.css";
 
 function SongForm() {
 const onSubmit = (e) => {
-  
+  e.preventDefault();
+  const formData = Object.fromEntries(new FormData(e.target));
+  console.log(formData)
 }
 
 

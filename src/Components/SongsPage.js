@@ -13,7 +13,7 @@ function SongsPage({ songs }) {
     <div>
       <SongsList songs={songs} />
       <Route exact path={match.url}>
-        <h3>Choose a song from the list above</h3>
+        <h3>Choose a song from the list to see the lyrics</h3>
       </Route>
 
       <Route path={`${match.url}/:songID`}>

@@ -1,5 +1,5 @@
-{ 
-  "songs":[
+{
+  "songs": [
     {
       "id": 1,
       "Title": "Father I Adore You",
@@ -34,6 +34,9 @@
       "Artist": "Yaw Boadu Jnr.",
       "Style": "Praise",
       "Lyrics": "Halle Hale, Oh Halla, Halle Halle, Halleluia"
+    },
+    {
+      "id": 6
     }
-    ]
- }
+  ]
+}

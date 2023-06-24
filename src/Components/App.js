@@ -21,8 +21,8 @@ function App() {
 
  if (!songs) return <h2>Loading...</h2>; 
 
-function handleOnFormSubmitted(resFormObj) {
-
+function handleOnFormSubmitted(newFormObj) {
+  onSongAdded(newFormObj);
 }
   return (
     <div>

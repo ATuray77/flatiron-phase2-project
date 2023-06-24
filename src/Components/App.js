@@ -18,7 +18,9 @@ function App() {
 
  if (!songs) return <h2>Loading...</h2>; 
 
-console.log(songs)
+function handleOnFormSubmitted() {
+  
+}
   return (
     <div>
       <NavBar />
@@ -27,7 +29,7 @@ console.log(songs)
           <SongsPage songs={songs} />
         </Route>
         <Route path="/form">
-          <SongForm form={"form"} />
+          <SongForm onFormSubmitted={handleOnFormSubmitted}form={"form"} />
         </Route>
         <Route exact path="/">
           <div>Home</div>

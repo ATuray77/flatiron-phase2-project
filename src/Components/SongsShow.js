@@ -1,9 +1,18 @@
 import React from 'react'
+import { useParams } from 'react-router-dom'
 
-function SongsShow() {
+function SongsShow({ songs }) {
+  console.log(songs)
+
+  const params = useParams();
+  console.log(params)
+  
+
   return (
-    <div>SongsShow</div>
-  )
+    <div>
+      <h3>{songs[params.songID].Title}</h3>
+    </div>
+  );
 }
 
 export default SongsShow

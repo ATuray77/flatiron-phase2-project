@@ -2,8 +2,14 @@
 import "./Form.css";
 
 function SongForm() {
+const onSubmit = (e) => {
+  
+}
+
+
+
   return (
-    <form className="form">
+    <form  onSubmit={onSubmit}className="form">
       <label>
         Title
         <input type='text' name='title'/>

@@ -10,6 +10,9 @@ import React, { useEffect, useState } from "react";
 function App() {
  const [ songs, setSongs] = useState([]);
 
+ //makes added songs persistent on database
+ const onSongAdded = (resFormObj) => setSongs([...songs, resFormObj])
+
   useEffect(() => {
     fetch("http://localhost:4000/songs")
       .then((r) => r.json())
@@ -18,8 +21,8 @@ function App() {
 
  if (!songs) return <h2>Loading...</h2>; 
 
-function handleOnFormSubmitted() {
-  
+function handleOnFormSubmitted(resFormObj) {
+
 }
   return (
     <div>

@@ -24,15 +24,15 @@ function SongForm({ onFormSubmitted }) {
     <form onSubmit={onSubmit} className="form">
       <label>
         Title
-        <input type="text" name="title" />
+        <input type="text" name="Title" />
       </label>
       <label>
         Artist
-        <input type="text" name="artist" />
+        <input type="text" name="Artist" />
       </label>
       <label>
         Style
-        <select name="style">
+        <select name="Style">
           <option>praise</option>
           <option>Worship</option>
         </select>

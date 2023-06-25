@@ -36,25 +36,25 @@
       "Lyrics": "Halle Hale, Oh Halla, Halle Halle, Halleluia"
     },
     {
-      "title": "Winner",
-      "artist": "Aruna",
-      "style": "praise",
-      "lyrics": "Are you a winner, I am a winner, in the Lord Jesus",
+      "Title": "Glory",
+      "Artist": "John",
+      "Style": "praise",
+      "Lyrics": "Glory to God",
       "id": 6
     },
     {
-      "title": "123",
-      "artist": "456",
-      "style": "praise",
-      "lyrics": "789",
-      "id": 7
+      "Title": "I have more than a song",
+      "Artist": "Dunsin Onyekan",
+      "Style": "Worship",
+      "Lyrics": "I have more than a song, today, I brought myself, I am your sacrifice. I am more than a song, today, I brought myself, I am your worship",
+      "id": 9
     },
     {
-      "title": "aaaaa",
-      "artist": "bbbbb",
-      "style": "praise",
-      "lyrics": "cccccc",
-      "id": 8
+      "Title": "Kadosh",
+      "Artist": "Joe Mettle",
+      "Style": "Worship",
+      "Lyrics": "You reign, you ancient Zion's king.\nKadosh, You are mighty on your throne",
+      "id": 10
     }
   ]
 }

@@ -39,7 +39,7 @@ function SongForm({ onFormSubmitted }) {
       </label>
       <label>
         Lyrics
-        <textarea name="lyrics"></textarea>
+        <textarea name="Lyrics"></textarea>
       </label>
       <button type="submit">Submit</button>
     </form>

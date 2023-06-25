@@ -8,7 +8,10 @@ import React, { useEffect, useState } from "react";
 //import { Link } from "react-router-dom";
 
 function App() {
- const [ songs, setSongs] = useState([]);
+ const [ songs, setSongs] = useState([])
+
+ function handleOnFormSubmitted(addedSong) {
+   setSongs([...songs, addedSong])}
 
   useEffect(() => {
     fetch("http://localhost:4000/songs")
@@ -18,18 +21,16 @@ function App() {
 
  if (!songs) return <h2>Loading...</h2>; 
 
-function handleOnFormSubmitted(addedSong) {
-  setSongs([...songs, addedSong]);
-}
+
   return (
     <div>
       <NavBar />
       <Switch>
         <Route path="/songs">
-          <SongsPage songs={songs} setSongs={setSongs}/>
+          <SongsPage songs={songs} setSongs={setSongs} />
         </Route>
         <Route path="/form">
-          <SongForm onFormSubmitted={handleOnFormSubmitted}form={"form"} />
+          <SongForm onFormSubmitted={handleOnFormSubmitted} />
         </Route>
         <Route exact path="/">
           <div>Home</div>

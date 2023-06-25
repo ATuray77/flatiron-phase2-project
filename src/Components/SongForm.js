@@ -8,15 +8,16 @@ function SongForm({ onFormSubmitted }) {
     console.log(formData);
 
     fetch("http://localhost:4000/songs", 
-    {
-      method: "POST",
-      headers: {
-        "accept": "application/json",
-        "Content-Type": "application/json"},
-      body: JSON.stringify(formData),
-    })
-      .then((r) => r.json())
-      .then((addedSong) => console.log(addedSong));
+          {
+            method: "POST",
+            headers: {
+              "accept": "application/json",
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify(formData),
+          }
+    ).then((r) => r.json())
+     .then((addedSong) => onFormSubmitted(addedSong));
   };
 
   return (
@@ -40,7 +41,7 @@ function SongForm({ onFormSubmitted }) {
         Lyrics
         <textarea name="lyrics"></textarea>
       </label>
-      <button>Save</button>
+      <button type="submit">Submit</button>
     </form>
   );
 }

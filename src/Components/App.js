@@ -10,9 +10,6 @@ import React, { useEffect, useState } from "react";
 function App() {
  const [ songs, setSongs] = useState([]);
 
- //makes added songs persistent on database
-// const onFormAdded = (resFormObj) => setSongs([...songs, resFormObj])
-
   useEffect(() => {
     fetch("http://localhost:4000/songs")
       .then((r) => r.json())

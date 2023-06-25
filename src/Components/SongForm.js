@@ -12,8 +12,7 @@ function SongForm({ onFormSubmitted }) {
       method: "POST",
       headers: {
         "accept": "application/json",
-        "Conetent-Type": "application/json"
-      },
+        "Content-Type": "application/json"},
       body: JSON.stringify(formData),
     })
       .then((r) => r.json())

@@ -11,13 +11,13 @@ function SongForm({ onFormSubmitted }) {
     {
       method: "POST",
       headers: {
-        accept: "application/json",
-        "Conetent-Type": "application/json",
+        "accept": "application/json",
+        "Conetent-Type": "application/json"
       },
       body: JSON.stringify(formData),
     })
       .then((r) => r.json())
-      .then((resFormObj) => onFormSubmitted(resFormObj));
+      .then((addedSong) => console.log(addedSong));
   };
 
   return (

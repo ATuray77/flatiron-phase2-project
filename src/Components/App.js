@@ -11,7 +11,7 @@ function App() {
  const [ songs, setSongs] = useState([]);
 
  //makes added songs persistent on database
- const onSongAdded = (resFormObj) => setSongs([...songs, resFormObj])
+// const onFormAdded = (resFormObj) => setSongs([...songs, resFormObj])
 
   useEffect(() => {
     fetch("http://localhost:4000/songs")
@@ -21,15 +21,15 @@ function App() {
 
  if (!songs) return <h2>Loading...</h2>; 
 
-function handleOnFormSubmitted(newFormObj) {
-  onSongAdded(newFormObj);
+function handleOnFormSubmitted(addedSong) {
+  setSongs([...songs, addedSong]);
 }
   return (
     <div>
       <NavBar />
       <Switch>
         <Route path="/songs">
-          <SongsPage songs={songs} />
+          <SongsPage songs={songs} setSongs={setSongs}/>
         </Route>
         <Route path="/form">
           <SongForm onFormSubmitted={handleOnFormSubmitted}form={"form"} />

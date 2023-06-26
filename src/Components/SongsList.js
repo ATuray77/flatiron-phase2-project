@@ -5,7 +5,6 @@ import { Link } from 'react-router-dom'
 
 
 function SongsList({ songs }) {
-  console.log(songs)
  
 const renderSongs = Object.keys(songs).map((songID) => (
   <li key={songID}>
@@ -15,8 +14,14 @@ const renderSongs = Object.keys(songs).map((songID) => (
 
 
   return (
-    <ul>{renderSongs}</ul>
-  )
+    <div>
+      <label>
+        🔎
+        <input type='search'/>
+      </label>
+      <ul>{renderSongs}</ul>
+    </div>
+  );
 }
 
 export default SongsList

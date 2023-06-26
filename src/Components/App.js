@@ -14,7 +14,7 @@ function App() {
    setSongs([...songs, addedSong])}
 
   useEffect(() => {
-    fetch("http://localhost:4000/songs")
+    fetch("http://localhost:3000/songs")
       .then((r) => r.json())
       .then((songs) => setSongs(songs))  
   }, [])  

@@ -9,6 +9,7 @@ function SongsList({ songs }) {
 const renderSongs = Object.keys(songs).map((songID) => (
   <li key={songID}>
     <Link to={`/songs/${songID}`}>{songs[songID].Title}</Link>
+    <button> 🗑 </button>
   </li>
 ));
 

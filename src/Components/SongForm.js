@@ -1,4 +1,4 @@
-
+import "./App.css";
 import "./Form.css";
 
 function SongForm({ onFormSubmitted }) {
@@ -7,17 +7,16 @@ function SongForm({ onFormSubmitted }) {
     const formData = Object.fromEntries(new FormData(e.target));
     console.log(formData);
 
-    fetch("http://localhost:4000/songs", 
-          {
-            method: "POST",
-            headers: {
-              "accept": "application/json",
-              "Content-Type": "application/json",
-            },
-            body: JSON.stringify(formData),
-          }
-    ).then((r) => r.json())
-     .then((addedSong) => onFormSubmitted(addedSong));
+    fetch("http://localhost:4000/songs", {
+      method: "POST",
+      headers: {
+        accept: "application/json",
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(formData),
+    })
+      .then((r) => r.json())
+      .then((addedSong) => onFormSubmitted(addedSong));
   };
 
   return (
@@ -46,4 +45,4 @@ function SongForm({ onFormSubmitted }) {
   );
 }
 
-export default SongForm
+export default SongForm;

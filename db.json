@@ -36,25 +36,102 @@
       "Lyrics": "Halle Hale, Oh Halla, Halle Halle, Halleluia"
     },
     {
-      "Title": "Glory",
-      "Artist": "John",
-      "Style": "praise",
-      "Lyrics": "Glory to God",
-      "id": 6
-    },
-    {
+      "id": 6,
       "Title": "I have more than a song",
       "Artist": "Dunsin Onyekan",
       "Style": "Worship",
-      "Lyrics": "I have more than a song, today, I brought myself, I am your sacrifice. I am more than a song, today, I brought myself, I am your worship",
-      "id": 9
+      "Lyrics": "I have more than a song, today, I brought myself, I am your sacrifice. I am more than a song, today, I brought myself, I am your worship"
     },
     {
-      "Title": "Kadosh",
-      "Artist": "Joe Mettle",
+      "id": 7,
+      "Title": "Adonai we worship you",
+      "Artist": "Unknown",
       "Style": "Worship",
-      "Lyrics": "You reign, you ancient Zion's king.\nKadosh, You are mighty on your throne",
-      "id": 10
+      "Lyrics": "Adonai we worship you, Son of God You are so good. Almighty God, Halloweth be your name, Your dominion is forever more"
+    },
+    {
+      "id": 8,
+      "Title": "Amen Amen",
+      "Artist": "Unknown",
+      "Style": "Praise",
+      "Lyrics": "Amen Amen, Blessings and Glory, Wisdom Thanksgiving and Honor, Power and Might belongs to our God, Forever and ever Amen"
+    },
+    {
+      "id": 10,
+      "Title": "Anointing fall on me",
+      "Artist": "Unknown",
+      "Style": "Worship",
+      "Lyrics": "Anointing fall on me. Anointing fall on me. Let the power of the Holy Ghost fall on me, Anointing fall on me"
+    },
+    {
+      "id": 11,
+      "Title": "Be Glorified",
+      "Artist": "Unknown",
+      "Style": "Worship",
+      "Lyrics": "Be Glorified, Be Glorified. Be Glorified in the Heavesn. Be Glorified on this earth. Be Glorified in this temple. Jesus, Jesus, be Thou Glorified"
+    },
+    {
+      "id": 12,
+      "Title": "Consuming Fire",
+      "Artist": "Unknown",
+      "Style": "Worship",
+      "Lyrics": "Consuming fire, I worship You today. You are the all consuming fire, come and manifest yourself"
+    },
+    {
+      "id": 13,
+      "Title": "We Bow Down and Worship",
+      "Artist": "Unknown",
+      "Style": "Worship",
+      "Lyrics": "We bow down and worship Yahweh. We bow down and worship Yahweh. Yahweh, Yahweh, Yahweh"
+    },
+    {
+      "id": 14,
+      "Title": "El Elyon",
+      "Artist": "Unknown",
+      "Style": "Worship",
+      "Lyrics": "El Elyon, God Most High. You are Jesus Christ, You are El Elohe Israel"
+    },
+    {
+      "id": 15,
+      "Title": "Fill me Up",
+      "Artist": "Tasha Brown",
+      "Style": "Worship",
+      "Lyrics": "YOu provide the fire. I provide the sacrifice. You provide the Spirit. I will open up inside. Fill me up God. Fill me up God. Fill me up God. Fill me up"
+    },
+    {
+      "id": 16,
+      "Title": "Fire Burning in My Soul",
+      "Artist": "Unknown",
+      "Style": "Praise",
+      "Lyrics": "Fire burning in my soul. Pentecostal fire ay. Holy Ghost fire ay. Fire Fire Fire."
+    },
+    {
+      "id": 17,
+      "Title": "I Enter the Holy of Holies",
+      "Artist": "Unknown",
+      "Style": "Worship",
+      "Lyrics": "I enter the holy of holies. I enter through the blood of the lamb. I enter to worship You only. I enter to honor I AM. Lord I worship You, I worship You. Lord I worship You, I worship You. For your name is Holy, Holy, Lord."
+    },
+    {
+      "id": 18,
+      "Title": "Holy Ghost Do it Again",
+      "Artist": "Unknown",
+      "Style": "Worship",
+      "Lyrics": "Holy Ghost do it again. Do it again in my life. Open my eyes to see Jesus. Seated upon the throne"
+    },
+    {
+      "id": 19,
+      "Title": "I Have No Other God",
+      "Artist": "Unknown",
+      "Style": "Worship",
+      "Lyrics": "I have no other God but You. I have no other God but You. You have done what no man can do. You will do what no man can do"
+    },
+    {
+      "id": 20,
+      "Title": "I will Worship You",
+      "Artist": "Danny Nattey",
+      "Style": "Worship",
+      "Lyrics": "I will worship You. Lift You high above the earth and the Heavens. You are Lord. You are Lord. Yes You are"
     }
   ]
 }

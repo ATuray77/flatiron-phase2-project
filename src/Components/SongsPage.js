@@ -6,16 +6,15 @@ import "./App.css";
 //import SongForm from './SongForm'
 
 
-function SongsPage({ songs }) {
-  const match = useRouteMatch()
-  console.log(match)
+function SongsPage({ songs, setSongs }) {
+  const match = useRouteMatch();
+  // console.log(match)
 
 
 
-  
   return (
     <div>
-      <SongsList songs={songs} />
+      <SongsList songs={songs} setSongs={setSongs}  />
       <Route exact path={match.url}>
         <h3>Choose a song from the list to see details</h3>
       </Route>
@@ -23,7 +22,6 @@ function SongsPage({ songs }) {
       <Route path={`${match.url}/:songID`}>
         <SongsShow songs={songs} />
       </Route>
-     
     </div>
   );
 }

@@ -1,26 +1,32 @@
-import React from 'react'
+//import React from 'react'
 import { Link } from 'react-router-dom'
 import "./App.css";
+import React, { useState } from "react";
 
 
+function SongsList({ songs, setSongs}) {
+const [searchTerm, setSearchTerm] = useState("")
 
 
-function SongsList({ songs }) {
- 
-const renderSongs = Object.keys(songs).map((songID) => (
-  <li key={songID}>
-    <Link to={`/songs/${songID}`}>{songs[songID].Title}</Link>
-    <button>  🗑  </button>
-  </li>
-));
+  const renderSongs = Object.keys(songs).map((songID) => (
+    <li key={songID}>
+      <Link to={`/songs/${songID}`}>{songs[songID].Title}</Link>
+    </li>
+  ));
 
+  const onFormSubmission = (e) => {
+    e.preventDefault()
+    setSongs(songs.filter(song => song.Title.toLowerCase().includes(searchTerm)))
+  }
 
   return (
     <div>
-      <label>
-        🔎
-        <input type='search' placeholder='search...'/>
-      </label>
+      <form onSubmit={onFormSubmission}>
+        <label>
+          🔎
+          <input type="search" value={searchTerm} placeholder="search..." onChange={(e) => setSearchTerm(e.target.value.toLowerCase())} />
+        </label>
+      </form>
       <ul>{renderSongs}</ul>
     </div>
   );

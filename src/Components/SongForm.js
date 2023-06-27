@@ -1,7 +1,10 @@
-import "./App.css";
+ //import "./App.css";
 import "./Form.css";
+//import { useRef } from "react";
+
 
 function SongForm({ onFormSubmitted }) {
+
   const onSubmit = (e) => {
     e.preventDefault();
     const formData = Object.fromEntries(new FormData(e.target));
@@ -20,28 +23,30 @@ function SongForm({ onFormSubmitted }) {
   };
 
   return (
-    <form onSubmit={onSubmit} className="form">
-      <label>
-        Title
-        <input type="text" name="Title" />
-      </label>
-      <label>
-        Artist
-        <input type="text" name="Artist" />
-      </label>
-      <label>
-        Style
-        <select name="Style">
-          <option>praise</option>
-          <option>Worship</option>
-        </select>
-      </label>
-      <label>
-        Lyrics
-        <textarea name="Lyrics"></textarea>
-      </label>
-      <button type="submit">Submit</button>
-    </form>
+    <>
+      <form onSubmit={onSubmit} className="form">
+        <label>
+          Title
+          <input type="text" name="Title" />
+        </label>
+        <label>
+          Artist
+          <input type="text" name="Artist" />
+        </label>
+        <label>
+          Style
+          <select name="Style">
+            <option>praise</option>
+            <option>Worship</option>
+          </select>
+        </label>
+        <label>
+          Lyrics
+          <textarea name="Lyrics"></textarea>
+        </label>
+        <button type="submit">Submit</button>
+      </form>
+    </>
   );
 }
 

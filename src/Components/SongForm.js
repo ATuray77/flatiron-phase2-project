@@ -10,7 +10,7 @@ function SongForm({ onFormSubmitted }) {
     const formData = Object.fromEntries(new FormData(e.target));
     console.log(formData);
 
-    fetch("http://localhost:4000/songs", {
+    fetch("http://localhost:3000/songs", {
       method: "POST",
       headers: {
         accept: "application/json",
@@ -23,7 +23,6 @@ function SongForm({ onFormSubmitted }) {
   };
 
   return (
-    <>
       <form onSubmit={onSubmit} className="form">
         <label>
           Title
@@ -46,7 +45,6 @@ function SongForm({ onFormSubmitted }) {
         </label>
         <button type="submit">Submit</button>
       </form>
-    </>
   );
 }
 

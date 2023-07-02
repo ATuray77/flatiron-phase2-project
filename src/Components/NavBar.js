@@ -1,6 +1,6 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
-import "./App.css";
+//import "./App.css";
 
 
 const linkStyles = {
@@ -16,13 +16,13 @@ const linkStyles = {
 function NavBar() {
   return (
     <div>
-      <NavLink to="/" exact style={linkStyles} activeStyle={{ background: "khaki" }}>
+      <NavLink to="/" exact style={linkStyles} activeStyle={{ background: "DarkOliveGreen" }}>
         Home
       </NavLink>
-      <NavLink to="/songs" exact style={linkStyles} activeStyle={{ background: "khaki" }}>
+      <NavLink to="/songs" exact style={linkStyles} activeStyle={{ background: "DarkOliveGreen" }}>
         Songs
       </NavLink>
-      <NavLink to="/form" exact style={linkStyles} activeStyle={{ background: "khaki" }}>
+      <NavLink to="/form" exact style={linkStyles} activeStyle={{ background: "DarkOliveGreen" }}>
         Form
       </NavLink>
     </div>

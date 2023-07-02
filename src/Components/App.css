@@ -1,7 +1,32 @@
+ /* main {
+  text-align: right;
+  vertical-align: center;
+  background-color: black;
+} */
+
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16;
+  background-color: darkseagreen;
+  margin: 20ppx;
+  
+}
+
+ /* * {
+  margin: 10px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16;
+  background-color: grey;
+  
+}
+
 main {
   text-align: center;
   vertical-align: center;
-}
-
-
-
+} */

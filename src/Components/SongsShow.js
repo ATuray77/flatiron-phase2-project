@@ -13,6 +13,7 @@ function SongsShow({ songs }) {
       <h3>Title: {songs[params.songID].Title}</h3>
       <h4>Artist: {songs[params.songID].Artist}</h4>
       <h5>Style: {songs[params.songID].Style}</h5>
+      <h5>Lyrics: {songs[params.songID].Lyrics}</h5>
       <p>{songs[params.songID].Lyrics}</p>
     </div>
   );

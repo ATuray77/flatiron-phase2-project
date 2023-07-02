@@ -2,6 +2,20 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+# Phase 2 project repository on GitHub
+https://github.com/ATuray77/flatiron-phase2-project
+
+## Local download instructions
+[1] click on the link then create a fork 
+[2] Open your terminal then clone it locally then navigate to the folder
+[3] Open the link a code editor of your choice.
+
+## Back-end JSON-SERVER Repository
+https://github.com/ATuray77/flatiron-phase-2-json-server
+[1] Navigate to jsong-server folder
+[2] run the following command to initialize the json-server: npm run dev
+
+
 ## Available Scripts
 
 In the project directory, you can run:
@@ -13,11 +27,18 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
+## Features of this app
+[1] When the app loads it fetches data from the json-server and displays them in the DOM
+[2] Through the navigation bar you can navigate to different tabs on the single page
+[3] When you click the 'Songs' tab it displays all the data in the database
+[4] When a user clicks on a song from the list, the lyrics of that song is displayed at the botton of the list
+[5] A user can also search for a particular song in the database.
+[6] Clicking on the 'Form' tab will display a form which the user can fill then submit. Upon submission, the song will be displayed at the bottom of the list.
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Upcoming features
+[1] The possibility to deleta a song from the list
+[2] More advanced features will be added in upcoming updates
 
 ### `npm run build`
 
@@ -29,15 +50,7 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
 ## Learn More
 
@@ -45,26 +58,8 @@ You can learn more in the [Create React App documentation](https://facebook.gith
 
 To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
 ### Deployment
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

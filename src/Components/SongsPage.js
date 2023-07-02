@@ -14,9 +14,10 @@ function SongsPage({ songs, setSongs }) {
 
   return (
     <div>
+       <h3>Choose a song from the list to see details</h3>
       <SongsList songs={songs} setSongs={setSongs}  />
       <Route exact path={match.url}>
-        <h3>Choose a song from the list to see details</h3>
+       
       </Route>
 
       <Route path={`${match.url}/:songID`}>

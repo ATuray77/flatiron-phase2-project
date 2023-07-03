@@ -43,7 +43,7 @@ function SongForm({ onFormSubmitted }) {
           Lyrics
           <textarea name="Lyrics"></textarea>
         </label>
-        <button type="submit">Submit</button>
+        <button type="submit">Add a song</button>
       </form>
   );
 }

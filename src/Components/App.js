@@ -31,6 +31,12 @@ function App() {
 
   if (!songs) return <h2>Loading...</h2>;
 
+   //handles delete
+// function onClickDelete(id) {
+//   const updatedSongs = songs.filter((song) => song.id !== id)
+//   setSongs(updatedSongs)
+
+
   return (
     <div>
       <NavBar />

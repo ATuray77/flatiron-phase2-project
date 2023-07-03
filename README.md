@@ -5,6 +5,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 # Phase 2 project repository on GitHub
 https://github.com/ATuray77/flatiron-phase2-project
 
+# Phase frontend deployed on netlify
+https://flatiron-phase-2-reactprojec-frontend.netlify.app/songs
+
 ## Local download instructions
 [1] click on the link then create a fork 
 [2] Open your terminal then clone it locally then navigate to the folder
@@ -15,6 +18,8 @@ https://github.com/ATuray77/flatiron-phase-2-json-server
 [1] Navigate to jsong-server folder
 [2] run the following command to initialize the json-server: npm run dev
 
+## Back-end json-server deployed on render.com
+https://new-json-server.onrender.com
 
 ## Available Scripts
 

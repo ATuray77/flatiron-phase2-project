@@ -2,6 +2,7 @@
 import { Route, Switch } from "react-router-dom";
 import "./App.css"
 import NavBar from './NavBar';
+import Home from "./Home";
 import SongsPage from './SongsPage';
 import SongForm from './SongForm';
 import React, { useEffect, useState } from "react";
@@ -41,7 +42,7 @@ function App() {
           <SongForm onFormSubmitted={handleOnFormSubmitted} />
         </Route>
         <Route exact path="/">
-          <div>Home</div>
+          <Home />
         </Route>
       </Switch>
     </div>

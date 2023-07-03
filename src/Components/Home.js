@@ -21,7 +21,10 @@ const Home = () =>  {
     <>
     <h1>Home Page</h1>
       {songs.map(song => (
-        <p key={song.id}>{song.Title}</p>
+        <p key={song.id}>{song.Title}
+        <button>x</button>
+        </p>
+        
       ))}
     </>
   );

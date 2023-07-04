@@ -43,7 +43,8 @@ You may also see any lint errors in the console.
 
 ## Upcoming features
 [1] The possibility to deleta a song from the list
-[2] More advanced features will be added in upcoming updates
+[2] The delete button is still in Work-In-Progress. It is not functioning yet. 
+[3] More advanced features will be added in upcoming updates
 
 ### `npm run build`
 

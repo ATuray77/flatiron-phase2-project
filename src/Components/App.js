@@ -12,16 +12,23 @@ function App() {
   const [songs, setSongs] = useState([]);
 
   //to handle delete
-//const { id } = songs
-
-  // function handleDeleteSong(deletedSong) {
-  //   songs.filter((song) => song.id !== deletedSong.id);
-  //   setSongs(songs);
-  // }
+  //const { id } = songs
 
   function handleOnFormSubmitted(addedSong) {
-    setSongs([...songs, addedSong]);
+    const updatedSongs = [...songs, addedSong];
+    setSongs(updatedSongs);
   }
+
+  //handles delete
+  function handleDeleteSong(id) {
+    const updatedSongs = songs.filter((song) => song.id !== id);
+    setSongs(updatedSongs);
+  }
+
+  //if shits hit the fan we resolve back to this
+  // function handleOnFormSubmitted(addedSong) {
+  //   setSongs([...songs, addedSong]);
+  // }
 
   useEffect(() => {
     fetch("http://localhost:3000/songs")
@@ -31,24 +38,18 @@ function App() {
 
   if (!songs) return <h2>Loading...</h2>;
 
-   //handles delete
-// function onClickDelete(id) {
-//   const updatedSongs = songs.filter((song) => song.id !== id)
-//   setSongs(updatedSongs)
-
-
   return (
     <div>
       <NavBar />
       <Switch>
         <Route path="/songs">
-          <SongsPage songs={songs} setSongs={setSongs}  />
+          <SongsPage songs={songs} setSongs={setSongs} />
         </Route>
         <Route path="/form">
           <SongForm onFormSubmitted={handleOnFormSubmitted} />
         </Route>
         <Route exact path="/">
-          <Home />
+          <Home songs={songs} id={songs.id} onDeleteSong={handleDeleteSong} />
         </Route>
       </Switch>
     </div>

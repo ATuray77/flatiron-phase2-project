@@ -3,33 +3,45 @@ import "./App.css";
 
 
 
-const Home = () =>  {
-  const [songs, setSongs] = useState([])
+const Home = ({ id, onDeleteSong }) => {
+  const [songs, setSongs] = useState([]);
+
+  //const { id } = song
 
   useEffect(() => {
-  const testDeployedApt = async () => {
-    let apiResults = await fetch("https://new-json-server.onrender.com/songs")
-      .then((r) => r.json())
-      .then((data) => data);
+    const testDeployedApt = async () => {
+      let apiResults = await fetch("https://new-json-server.onrender.com/songs")
+        .then((r) => r.json())
+        .then((data) => data);
       //console.table(apiResults)
-      setSongs(apiResults)
-  };
-  testDeployedApt();
-   }, []);
+      setSongs(apiResults);
+    };
+    testDeployedApt();
+  }, []);
 
-   //handles delete
-function handleDelete(id) {
-  const updatedSongs = songs.filter((song) => song.id !== id)
-  setSongs(updatedSongs)
-}
+  //handles delete
+  function handleDelete() {
+    fetch(`${process.env.REACT_APP_API_URL}/songs${id}`,{
+    //fetch(`https://new-json-server.onrender.com/songs${id}`, {
+      method: "DELETE",
+    })
+      .then((r) => r.json())
+      .then(() => onDeleteSong(id));
+    // const updatedSongs = songs.filter((song) => song.id !== id)
+    // setSongs(updatedSongs)
+
+    // handleDelete();
+  }
 
   return (
     <>
       <h1>Home Page</h1>
       {songs.map((song) => (
         <li key={song.id}>
-            {song.Title}
-            <button onClick={handleDelete}>Delete</button>
+          {song.Title}
+          <button onClick={handleDelete} id={song.id}>
+            Delete
+          </button>
         </li>
       ))}
     </>

@@ -2,20 +2,19 @@
 import { Link } from 'react-router-dom'
 //import "./App.css";
 import React, { useState } from "react";
+//import Home from './Home';
 
 
-function SongsList({ songs, setSongs}) {
-const [searchTerm, setSearchTerm] = useState("")
+function SongsList({ songs, setSongs }) {
+  const [searchTerm, setSearchTerm] = useState("");
 
-const onFormSubmission = (e) => {
-  e.preventDefault()
+  const onFormSubmission = (e) => {
+    e.preventDefault();
 
-  setSongs(songs.filter((song) => song.Title.toLowerCase().includes(searchTerm)));
-  // const filteredSongs = songs.filter(song => 
-  //   song.Title.toLowerCase().includes(searchTerm))
-    
-}
-
+    setSongs(songs.filter((song) => song.Title.toLowerCase().includes(searchTerm)));
+    // const filteredSongs = songs.filter(song =>
+    //   song.Title.toLowerCase().includes(searchTerm))
+  };
 
   const renderSongs = Object.keys(songs).map((songID) => (
     <li key={songID}>
@@ -23,7 +22,8 @@ const onFormSubmission = (e) => {
     </li>
   ));
 
-  
+ // const songPassToHome = songs.map((song) => <Home song={song} />);
+
   return (
     <div>
       <form onSubmit={onFormSubmission}>

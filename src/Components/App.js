@@ -31,7 +31,8 @@ function App() {
   // }
 
   useEffect(() => {
-    fetch("http://localhost:3000/songs")
+    fetch("https://new-json-server.onrender.com/songs")
+    //fetch("http://localhost:3000/songs")
       .then((r) => r.json())
       .then((songs) => setSongs(songs));
   }, []);

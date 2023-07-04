@@ -27,10 +27,6 @@ const Home = ({ id, onDeleteSong }) => {
     })
       .then((r) => r.json())
       .then(() => onDeleteSong(id));
-    // const updatedSongs = songs.filter((song) => song.id !== id)
-    // setSongs(updatedSongs)
-
-    // handleDelete();
   }
 
   return (

@@ -22,11 +22,12 @@ const Home = ({ id, onDeleteSong }) => {
   //handles delete
   function handleDelete() {
     //fetch(`${process.env.REACT_APP_API_URL}/songs${id}`,{
-    fetch(`https://new-json-server.onrender.com/songs${id}`, {
+    fetch(`https://new-json-server.onrender.com/songs/${id}`, {
       method: "DELETE",
-    })
-      .then((r) => r.json())
-      .then(() => onDeleteSong(id));
+    });
+      // .then((r) => r.json())
+      // .then(() => onDeleteSong(id));
+      onDeleteSong(id);
   }
 
   return (
